@@ -1,0 +1,28 @@
+body {
+  background-color: #fefefe;
+}
+
+.sectionHeader {
+  color: palevioletred;
+
+}
+
+.diaryHeader {
+  color: rgb(104, 7, 83)
+}
+
+.pamietniczek {
+  background-color: blueviolet;
+  color: #fefefe;
+}
+
+#header {
+  background-color: yellow;
+}
+
+.heading {
+  color: red;
+}
+.paragraph {
+  font-style: oblique;
+}
