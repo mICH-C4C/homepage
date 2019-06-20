@@ -1,75 +1,104 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Co ten frontend</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Co ten frontend</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-  <header>
-    <a href="index.html">Stona główna</a>
-    <a href="podstrona.html">Podstrona</a>
-    <a href="poniedzialek.html">Poniedziałek</a>
-    <a href="wtorek.html">Wtorek</a>
-  </header>
-
-  <main id="main">
-
-    <header id="header">
-      <h1 class="heading">Moja pierwsza strona - pozdro GIT</h1>
+  <body>
+    <header>
+      <a class="link" href="index.html">Stona główna</a>
+      <a class="link" href="podstrona.html">Podstrona</a>
+      <a class="link" href="poniedzialek.html">Poniedziałek</a>
+      <a class="link" href="wtorek.html">Wtorek</a>
     </header>
 
-    <section>
-      <h2 class="sectionHeader">O mnie</h2>
-      <!-- Używanie znacznika <b>POGRUBIENIE</b> i <i>KURSYWA</i> on wskazuje na tekst, który nie jest zbyt znaczący i czytniki ekranowe nie zwrócą na nie uwagi.
-                Natomiast znacznik <strong>POGRUBIENIE</strong> & <em>KURSYWA</em> są to znaczniki, na które czytniki ekranowe zwracają uwagę. Mówią, że ten tekst, który jest nimi objęty ma duże znaczenie.
-            -->
-      <p>Od zawsze interesuje się sportem oraz komputerami. Grałem przez kilkanaście lat w <b>RUGBY</b>. A w
-        wolnym czasie
-        <strong>uczę się robienia stron internetowych</strong>. :)
-        <br>
-        <a href="#pamietniczek" class="pamietniczek">Przejdź do pamiętniczka</a>
-
-
-      </p>
-      <section id="pamietniczek" style="background-color: aqua">
-        <h2 class="diaryHeader">Pamiętniczek</h2>
-
-        <section>
-          <h3>Jak stworzyć prawidłowego HTML-a?</h3>
-        </section>
+    <main id="main">
+      <header class="header">
+        <h1 class="heading">Moja pierwsza strona - pozdro GIT</h1>
+      </header>
         
-        <p class="paragraph">Tworzenie zgodnego ze stronami <i>HTML-a</i> to sztuka, która do perfekcji opanowało niewielu. Jeśli
-          chcesz stać się częścią tej grupy, musisz wykazać się otwartą głową i dużą ilością wolnego czasu...
-          <a href="podstrona.html">Przejdź do artykułu o pisaniu HTML-a</a>
-        </p>
-        <p class="paragraph"><em>Dzisiaj 28.05.2019</em> udało mi się rozpocząć nauke oraz odrobić częściowo pracę domową z
-          drugiego
-          tygodnia</p>
-        <p class="paragraph">29.05.2019 zmieniłem kolor nagłówka h2 oraz dodaje nowy wpis w paragrafie :)</p>
-        <p class="paragraph">W html-u, w nagłówku h1 nadałem "id o nazwie h1__header" - zmieniłem również kolor nagłówka h1 </p>
-        <section>Myśl jak programista</section>
-        <p class="paragraph">Postaraj się rozpisać w formie listy czynność, którą robisz na codzień</p>
-        <br>
-      </section>
+        <section class="about">
+          <h2 class="sectionHeader">O mnie</h2>
+          <!-- Używanie znacznika <b>POGRUBIENIE</b> i <i>KURSYWA</i> on wskazuje na tekst, który nie jest zbyt znaczący i czytniki ekranowe nie zwrócą na nie uwagi.
+                  Natomiast znacznik <strong>POGRUBIENIE</strong> & <em>KURSYWA</em> są to znaczniki, na które czytniki ekranowe zwracają uwagę. Mówią, że ten tekst, który jest nimi objęty ma duże znaczenie.
+              -->
+          <p>
+            Od zawsze interesuje się sportem oraz komputerami. Grałem przez
+            kilkanaście lat w <b>RUGBY</b>. W wolnym czasie<strong>
+              uczę się frontend</strong>. :)
+          </p>
+        </section>
 
-    </section>
-    <u>
-      <span>Tekt w znacznikach span z podkreśleniem za pomocą znaczników( u ) </span>
-    </u>
-    <br>
+        <a class="link" href="#pamietniczek">Przejdź do pamiętniczka</a>
 
-  </main>
+        <section id="pamietniczek">
+          <h2 class="diaryHeader">Pamiętniczek</h2>
 
-  <footer>
-    <p>Strona stworzona przez Michała Zdziech w kursie WTF: Co ten frontend</p>
-  </footer>
-<script src="main.js"></script>
-</script>
-</body>
+          <section>
+            <h3 class="thirdHeader">Jak stworzyć prawidłowego HTML-a?</h3>
 
+            <p class="paragraph">
+              Tworzenie zgodnego ze stronami <i>HTML-a</i> to sztuka, która do
+              perfekcji opanowało niewielu. Jeśli chcesz stać się częścią tej
+              grupy, musisz wykazać się otwartą głową i dużą ilością wolnego
+              czasu...<br />
+              <a class="link" href="podstrona.html"
+                >Przejdź do artykułu o pisaniu HTML-a</a
+              >
+            </p>
+          </section>
+
+          <section id="wpis-szkolenia">
+            <h3 class="thirdHeader">
+              Czy nagrywanie szkolenia to <em>prosta</em> sprawa?
+            </h3>
+            <p class="paragraph">
+              Na początku myślałem, że całe szkolenie nagram w
+              <em>2 tygodnie</em> (o ja naiwny!). Samo planowanie zajęło dużo
+              więcej! Na szczęście dzięki wspoarciu bliskich i sporej motywacji
+              udało mi się wytworzyć schemat nagrania, który każdego dnia
+              przybliża mnie do skończenia pracy.
+            </p>
+          </section>
+
+          <section id="nagrywanie-szkolenia">
+            <h3 class="thirdHeader">
+              Czy nagrywanie szkolenia to <em>prosta</em> sprawa?
+            </h3>
+            <p class="paragraph">
+              Na początku myślałem, że całe szkolenie nagram w
+              <em>2 tygodnie</em> (o ja naiwny!). Samo planowanie zajęło dużo
+              więcej! Na szczęście dzięki wspoarciu bliskich i sporej motywacji
+              udało mi się wytworzyć schemat nagrania, który każdego dnia
+              przybliża mnie do skończenia pracy.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="thirdHeader">
+              Czy nagrywanie szkolenia to <em>prosta</em> sprawa?
+            </h3>
+            <p class="paragraph">
+              Na początku myślałem, że całe szkolenie nagram w
+              <em>2 tygodnie</em> (o ja naiwny!). Samo planowanie zajęło dużo
+              więcej! Na szczęście dzięki wspoarciu bliskich i sporej motywacji
+              udało mi się wytworzyć schemat nagrania, który każdego dnia
+              przybliża mnie do skończenia pracy.
+            </p>
+          </section>
+        </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; Strona stworzona przez Michała Zdziech w kursie WTF: Co ten frontend 
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
 </html>

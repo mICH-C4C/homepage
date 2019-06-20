@@ -1,28 +1,32 @@
 body {
-  background-color: salmon;
+  background-color: #fefefe;
+  color: #333;
+  margin: 5px auto;
+  
 }
 
-.sectionHeader {
-  color: palevioletred;
-
+.sectionHeader, .diaryHeader {
+  color: #1460aa;
 }
 
-.diaryHeader {
-  color: rgb(104, 7, 83)
-}
-
-.pamietniczek {
-  background-color: blueviolet;
-  color: #fefefe;
-}
-
-#header {
+.header {
   background-color: yellow;
 }
 
 .heading {
-  color: red;
+  color: #00487c;
 }
 .paragraph {
-  font-style: oblique;
+  
+}
+.thirdHeader {
+  color: #0496ff;
+}
+.link {
+  color: #1a936f ;
+}
+.about {
+  width: 100%;
+  max-width: 700px;
+
 }
