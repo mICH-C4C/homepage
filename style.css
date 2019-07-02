@@ -2,7 +2,7 @@ body {
   background-color: #fefefe;
   color: #333;
   margin: 5px auto;
-  
+
 }
 
 .sectionHeader, .diaryHeader {
@@ -19,12 +19,15 @@ body {
 .paragraph {
   
 }
+
 .thirdHeader {
   color: #0496ff;
 }
+
 .link {
   color: #1a936f ;
 }
+
 .about {
   width: 100%;
   max-width: 700px;
