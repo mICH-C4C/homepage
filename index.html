@@ -9,15 +9,15 @@
    
   </head>
 
-  <body>  <!-- TERAZ ZACZNIJ OGLĄDAĆ TYDZIEN IV Lekcja 4.05 (życie w pudełku 2)-->
-    <header id="#top" class="navigation">
-      <a class="link" href="index.html">Stona główna</a>
-      <a class="link" href="podstrona.html">Podstrona</a>
-      <a class="link" href="poniedzialek.html">Poniedziałek</a>
-      <a class="link" href="wtorek.html">Wtorek</a>
+  <body>  <!-- Mała refaktoryzacja do BEM, dokończ w wolnej chwili i następna lekcja to 4.06. DOMowe przedszkole-->
+    <header  class="navigation">
+      <a class="nawigation__link" href="index.html">Stona główna</a>
+      <a class="nawigation__link" href="podstrona.html">Podstrona</a>
+      <a class="nawigation__link" href="poniedzialek.html">Poniedziałek</a>
+      <a class="nawigation__link" href="wtorek.html">Wtorek</a>
     </header>
 
-    <main id="main">
+    <main id="#top" class="main">
       <header class="header">
         <h1 class="heading">
           Moja pierwsza strona - pozdro GIT
@@ -25,22 +25,33 @@
       </header>
          
         <section class="about">
-          <h2 class="sectionHeader">O mnie</h2>
+          <div class="box">Co ten frontend</div>
+          
+          <h2 class="about__header">O mnie</h2>
           <!-- Używanie znacznika <b>POGRUBIENIE</b> i <i>KURSYWA</i> on wskazuje na tekst, który nie jest zbyt znaczący i czytniki ekranowe nie zwrócą na nie uwagi.
                   Natomiast znacznik <strong>POGRUBIENIE</strong> & <em>KURSYWA</em> są to znaczniki, na które czytniki ekranowe zwracają uwagę. Mówią, że ten tekst, który jest nimi objęty ma duże znaczenie.
               -->
-          <p class="paragraph">
+          <p class="about__paragraph">
+            
+            <img src="legiaRugby.jpg" alt="Wygrana rugby legia" class="about__picture">
             Od zawsze interesuje się sportem oraz komputerami. Grałem przez
             kilkanaście lat w <b>RUGBY</b>. W wolnym czasie<strong>
-              uczę się frontend</strong>. :)
+            uczę się frontendu</strong>. :) 
+            Od zawsze interesuje się sportem oraz komputerami. Grałem przez
+            kilkanaście lat w <b>RUGBY</b>. W wolnym czasie<strong>
+            uczę się frontendu</strong>. :) 
+            Od zawsze interesuje się sportem oraz komputerami. Grałem przez
+            kilkanaście lat w <b>RUGBY</b>. W wolnym czasie<strong>
+            uczę się frontendu</strong>. :)                               
+            <br>
+           <a class="about__link" href="#pamietniczek">Przejdź do pamiętniczka</a>
+         </p>          
+          <p class="about__paragraph about__paragraph--mini">
+            Testuje modyfikator.
           </p>
-          <br>
-          <a class="link" href="#pamietniczek">Przejdź do pamiętniczka</a>
         </section>
 
-        
-
-        <section id="pamietniczek">
+        <section id="pamietniczek" class="diary">
           <h2 class="diaryHeader">Pamiętniczek</h2>
 
           <section>
