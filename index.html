@@ -18,13 +18,14 @@
     </header>
 
     <main id="#top" class="main">
-      <header class="header">
-        <h1 class="heading">
+      <header class="main__header">
+        <h1 class="main__heading">
           Moja pierwsza strona - pozdro GIT
         </h1>
       </header>
          
         <section class="about">
+         
           <div class="box">Co ten frontend</div>
           
           <h2 class="about__header">O mnie</h2>
@@ -46,33 +47,36 @@
             <br>
            <a class="about__link" href="#pamietniczek">Przejdź do pamiętniczka</a>
          </p>          
-          <p class="about__paragraph about__paragraph--mini">
+          <p class="about__paragraph about__paragraph--mini about__paragraph--js">
             Testuje modyfikator.
           </p>
         </section>
 
         <section id="pamietniczek" class="diary">
-          <h2 class="diaryHeader">Pamiętniczek</h2>
+          <h2 class="diary__header">Pamiętniczek</h2>
 
-          <section>
-            <h3 class="thirdHeader">Jak stworzyć prawidłowego HTML-a?</h3>
+          <section class="article_diary">
+            
+            <h3 class="diary__header diary__header--about">Jak stworzyć prawidłowego HTML-a?</h3>
 
-            <p class="paragraph">
+            <p class="diary__paragraph">
+              
               Tworzenie zgodnego ze stronami <i>HTML-a</i> to sztuka, która do
               perfekcji opanowało niewielu. Jeśli chcesz stać się częścią tej
               grupy, musisz wykazać się otwartą głową i dużą ilością wolnego
               czasu...<br />
-              <a class="link" href="podstrona.html"
-                >Przejdź do artykułu o pisaniu HTML-a</a
-              >
+              <a class="diary__link" href="podstrona.html">
+                Przejdź do artykułu o pisaniu HTML-a
+              </a>
+
             </p>
           </section>
 
-          <section id="wpis-szkolenia">
-            <h3 class="thirdHeader">
+          <section class="diary">
+            <h3 class="diary__header diary__header--about">
               Czy nagrywanie szkolenia to <em>prosta</em> sprawa?
             </h3>
-            <p class="paragraph">
+            <p class="diary__paragraph">
               Na początku myślałem, że całe szkolenie nagram w
               <em>2 tygodnie</em> (o ja naiwny!). Samo planowanie zajęło dużo
               więcej! Na szczęście dzięki wspoarciu bliskich i sporej motywacji
@@ -81,11 +85,11 @@
             </p>
           </section>
 
-          <section id="nagrywanie-szkolenia">
-            <h3 class="thirdHeader">
+          <section class="diary">
+            <h3 class="diary__header diary__header--about">
               Czy nagrywanie szkolenia to <em>prosta</em> sprawa?
             </h3>
-            <p class="paragraph">
+            <p class="diary__paragraph">
               Na początku myślałem, że całe szkolenie nagram w
               <em>2 tygodnie</em> (o ja naiwny!). Samo planowanie zajęło dużo
               więcej! Na szczęście dzięki wspoarciu bliskich i sporej motywacji
@@ -94,11 +98,11 @@
             </p>
           </section>
 
-          <section>
-            <h3 class="thirdHeader">
+          <section class="diary">
+            <h3 class="diary__header diary__header--about">
               Czy nagrywanie szkolenia to <em>prosta</em> sprawa?
             </h3>
-            <p class="paragraph">
+            <p class="diary__paragraph">
               Na początku myślałem, że całe szkolenie nagram w
               <em>2 tygodnie</em> (o ja naiwny!). Samo planowanie zajęło dużo
               więcej! Na szczęście dzięki wspoarciu bliskich i sporej motywacji
@@ -109,10 +113,9 @@
         </section>
     </main>
 
-    <footer>
-      <a href="#top" class="top">Na górę!</a>
-      <p class="paragraph">
-
+    <footer class="feet">
+      <a href="#top" class="top" class="footer__link">Na górę!</a>
+      <p class="footer__paragraph footer__paragraph--mini">
         &copy; Strona stworzona przez Michała Zdziech w kursie WTF: Co ten frontend 
       </p>
     </footer>

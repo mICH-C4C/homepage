@@ -2,36 +2,13 @@ body {
   background-color: #fefefe;
   color: #333; 
 }
-.main {
-  width: 100%;
-  max-width: 700px;
-  margin: 32px auto;
-  padding-top: 50px;
-}
-
-.about__header, .diaryHeader {
+.about__header {
   color: #1460aa;
   position: relative;
 }
 
-.header {
-  background-color: yellow;
-  margin: 45px 0 0 0;
-}
-.heading {
-  color: #00487c;
-  margin-bottom: 48px;
-}
-.thirdHeader {
-  color: #0496ff;
-}
-.nawigation__link{
-  color: #1a936f ;
-}
+.about { 
 
-.paragraph {
-  padding: 16px;
-  overflow: hidden;
 }
 
 .box {
@@ -44,14 +21,73 @@ body {
   position: sticky;
   top: 0px;
   left: 0;
+  z-index: 10;
 }
 
-.top {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  color: #1a936f;
+.about__header {
+  color: #1460aa;
+}
+
+.about__paragraph {
+  //padding: 16px;
+  font-size: 20px;
+}
+
+.about__paragraph--mini {
+  font-size: 16px;
+  color: pink;
+}
+
+.about__picture {
+  width: 200px;
+  height: 200px;
+  display: block;
+  float: left;
+  margin: 0 16px 16px 0;
+}
+
+.about__link {
+  text-decoration:none;  
+}
+
+.diary {
+  clear: both;
+}
+
+.diary__header{
+  color: #0496ff;
+}
+
+.diary__header--about {
+  color: #BFD7B5
+}
+
+.diary__link {
   text-decoration: none;
+}
+/*
+.feet  {
+
+  width: 100%;
+  margin: 25px auto;
+  padding: 15px 0;
+
+}
+*/
+.main {
+  width: 100%;
+  max-width: 700px;
+  margin: 32px auto;
+  padding-top: 50px;
+}
+.main__header {
+  background-color: yellow;
+  margin: 45px 0 0 0;
+}
+
+.main__heading {
+  color: #00487c;
+  margin-bottom: 48px;
 }
 
 .navigation {
@@ -64,31 +100,31 @@ body {
   background: #fff;
 }
 
-.diary {
-  clear: both;
+.nawigation__link{
+  color: #1a936f ;
 }
 
-.about { 
-
-}
-
-.about__header {
+.paragraph,.diary__paragraph, .footer__paragraph {
+  padding: 16px;
+  overflow: hidden;
   color: #1460aa;
 }
-
-.about__paragraph {
-  padding: 16px;
-  font-size: 20px;
+.footer__paragraph--mini {
+  color: chocolate;
+  font-size: 12px;
+  margin: 25px auto;  
 }
 
-.about__paragraph--mini {
-  font-size: 16px;
+.top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: #1a936f;
+  text-decoration: none;
 }
 
-.about__picture {
-  width: 200px;
-  height: 200px;
-  display: block;
-  float: left;
-  margin: 0 16px 16px 0;
-}
+
+
+
+
+
